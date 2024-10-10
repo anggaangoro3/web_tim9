@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+  <link rel="stylesheet" href="style.css" />
+  <script async type="module" src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <title>BudgetIn</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+  <script async type="module" src="script.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+<nav>
+    <div class="">
+    <img src="/img/logo-removebg-preview.png" alt="BudgetIn">
+    </div>
+       <ul>
+       <li>
+         <a href="#home">Home</a>
+       </li>
+       <li>
+         <a href="#about">Tentang</a>
+       </li>
+       <li>
+         <a href="#contact">Kontak</a>
+       </li>
+     </ul>
+</nav>
+    <link rel="stylesheet" href="style.css">
+    <div class="content">
+      <h1>Budget In</h1>
+      <p>Helping Your Finance Flow.</p>
+    </div>
+
+<main>
+  <div class="wrapper">
+    <div class="container">
+      <div class="sub-container">
+        <!-- Budget -->
+        <div class="total-amount-container">
+          <h3>Budget</h3>
+          <p class="hide error" id="budget-error">Error tidak bisa negativ atau kosong</p>
+          <input type="number" id="total-amount" placeholder="Masukan Saldo" />
+          <button class="submit" id="total-amount-button">Set Budget</button>
+        </div>
+        <!-- Expenditure -->
+        <div class="user-amount-container">
+          <h3>Input Pengeluaran</h3>
+          <p class="hide error" id="product-title-error">Values cannot be empty</p>
+          <input type="text" class="product-title" id="product-title" placeholder="Keterangan Pengeluaran" />
+          <input type="number" id="user-amount" placeholder="Jumlah Yang Di Keluarkan" />
+          <button class="submit" id="check-amount">Input</button>
+        </div>
+      </div>
+      <!-- Output -->
+      <div class="output-container flex-space">
+        <div>
+          <p>Total Budget</p>
+          <span id="amount">0</span>
+        </div>
+        <div>
+          <p>Saldo Keluar</p>
+          <span id="expenditure-value">0</span>
+        </div>
+        <div>
+          <p>Sisa Saldo</p>
+          <span id="balance-amount">0</span>
+        </div>
+      </div>
+    </div>
+    <!-- List -->
+    <div class="list">
+      <h3>Riwayat Pengeluaran</h3>
+      <div class="list-container" id="list"></div>
+    </div>
+    <div class="chart">
+      <h3>Chart</h3>
+      <canvas id="incomeChart"></canvas>
+    </div>
+    <span class="bottomtext"> </span>
+  </div>
+</main>
+
+<footer>
+  <p>&copy;2024 Budgetin.com. Semua Hak Cipta Dilindungi.</p>
+</footer>
+</body>
+</html>
+<!--
+ memberikan saran pengeluaran harian-->
